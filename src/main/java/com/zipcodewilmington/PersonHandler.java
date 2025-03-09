@@ -15,8 +15,14 @@ public class PersonHandler {
     
     public String whileLoop() {
         String result = "";
+        StringBuilder resultBuilder = new StringBuilder();
         // create a `counter`
+        int counter = 0;
         // while `counter` is less than length of array
+        while (counter < personArray.length){
+            resultBuilder.append(personArray[counter]);
+            counter++;
+        }
             // begin loop
 
                 // use `counter` to identify the `current Person` in the array
@@ -24,7 +30,7 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
 
             // end loop
-        return result;
+        return resultBuilder.toString();
     }
 
 
@@ -49,6 +55,7 @@ public class PersonHandler {
 
     public String forEachLoop() {
         String result = "";
+        StringBuilder resultBuilder = new StringBuilder();
         // identify array's type
         // identify array's variable-name
 

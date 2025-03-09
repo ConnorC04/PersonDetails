@@ -21,7 +21,7 @@ public class Person {
         return lastName;
     }
 
-    @Override // why is Override here??
+ @Override// why is Override here??
     public String toString() {
         return new StringBuilder()
                 .append("\nMy first name is " + firstName)
